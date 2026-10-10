@@ -1,0 +1,7 @@
+"fault_label","n","set","start","end","percent","seed","split_method"
+"class_0",483,"train",2023-03-10,2023-03-10 13:19:00,60.38,123,"chronological 80/20"
+"class_1",250,"train",2023-03-10,2023-03-10 13:19:00,31.25,123,"chronological 80/20"
+"class_2",67,"train",2023-03-10,2023-03-10 13:19:00,8.38,123,"chronological 80/20"
+"class_0",126,"test",2023-03-10 13:20:00,2023-03-10 16:39:00,63,123,"chronological 80/20"
+"class_1",53,"test",2023-03-10 13:20:00,2023-03-10 16:39:00,26.5,123,"chronological 80/20"
+"class_2",21,"test",2023-03-10 13:20:00,2023-03-10 16:39:00,10.5,123,"chronological 80/20"

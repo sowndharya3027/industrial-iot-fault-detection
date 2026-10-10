@@ -1,0 +1,30 @@
+R PACKAGES NEEDED
+=================
+R version used for testing: 4.3.3 (any recent R 4.x should work)
+
+Install everything once (run in the R console):
+  install.packages(c("tidyverse", "caret", "randomForest", "kernlab", "nnet",
+                     "pROC", "shiny", "DT", "reshape2", "scales", "rmarkdown", "knitr"))
+
+Why each package is used
+  tidyverse (readr, dplyr, tidyr, ggplot2) - data handling and plots
+  caret         - model training, tuning and cross-validation
+  randomForest  - Random Forest + feature importance
+  nnet          - multinomial logistic regression (used through caret "multinom")
+  kernlab       - radial SVM (used through caret "svmRadial")
+  pROC          - ROC curves and ROC-AUC
+  shiny, DT     - dashboard and interactive tables
+  reshape2      - correlation matrix -> long format for the heatmap
+  scales        - helper required by ggplot2
+  rmarkdown, knitr (+ Pandoc, included with RStudio) - to build the report
+
+DEVIATIONS FROM THE ORIGINAL BRIEF (all documented)
+  * SVM: caret's radial SVM is provided by kernlab, so kernlab is used instead of e1071.
+  * vip / PRROC were not installed in the test environment. Feature importance uses the
+    Random Forest's built-in importance (randomForest::importance); PR-AUC is computed
+    in R/utils.R (average precision), so no extra package is needed.
+  * Logistic regression is MULTINOMIAL because the target has three classes (0, 1, 2).
+
+IMPORTANT FOR SHINY
+  R/_disable_autoload.R stops Shiny from running every script in the R/ folder when the
+  dashboard starts. Do not delete it.

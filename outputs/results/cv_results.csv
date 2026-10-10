@@ -1,0 +1,4 @@
+"model","best_tuning","cv_accuracy","cv_kappa","majority_baseline_accuracy"
+"logistic_regression","decay=1",0.6125,0,0.60375
+"random_forest","mtry=1",0.545,0.0391478389311271,0.60375
+"svm_radial","sigma=0.414763840682883, C=0.25",0.6075,0.00609756097560976,0.60375

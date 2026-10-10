@@ -1,0 +1,4 @@
+"feature","MeanDecreaseAccuracy","MeanDecreaseGini","feature_label"
+"vibration_mm_s",1.38923857779154,141.528209152976,"Vibration (mm/s)"
+"temperature_c",0.495268480035275,143.649907603157,"Temperature (°C)"
+"pressure_bar",0.156094118270805,139.247749910534,"Pressure (bar)"

@@ -1,0 +1,4 @@
+"","Vibration (mm/s)","Temperature (°C)","Pressure (bar)"
+"Vibration (mm/s)",1,0.0293,0.0145
+"Temperature (°C)",0.0293,1,0.0273
+"Pressure (bar)",0.0145,0.0273,1
